@@ -1,0 +1,62 @@
+.brand-logo{
+  font-family: "Arial Black";
+  margin-left: 30px;
+}
+section{
+  height: 100vh;
+}
+.big-logo-bold{
+  font-family: "Arial Black";
+  font-size: 48px;
+}
+.big-logo-caption{
+  font-size: 16px;
+}
+.big-logo{
+  padding-top: 100px;
+  line-height: 30px;
+}
+
+.main-section{
+display: flex;
+}
+
+.main-hover-menu{
+  width: 70%;
+  max-width: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-hover-menu_item{
+  font-family: "Arial Black";
+   width: 20%;
+   min-width: 20%;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.15s;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 30px;
+ }
+.main-hover-menu_item h2{
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-in-out;
+  transition-delay: 0.15s;
+}
+.main-hover-menu_item:hover{
+  width: 40%;
+}
+
+.main-hover-menu_item:hover h2{
+  transform: rotate(0deg);
+}
+.hover-visible{
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  transition-delay: 0.3s;
+}
+.main-hover-menu_item:hover .hover-visible{
+  visibility: visible;
+  opacity: 1;
+}
